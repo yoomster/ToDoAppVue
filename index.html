@@ -18,6 +18,12 @@
             </div>
             <div class="product-info">
               <h1>{{ product }}</h1>
+              <!-- <ul>
+                <li v-for="todo in todos", :key="todo.id">{{todo.task}}</li>
+              </ul> -->
+              <div v-for="todo in todos" :key="todo.id">
+                <li>{{todo.task}}</li>
+            </div>
             </div>
           </div>
         </div>
